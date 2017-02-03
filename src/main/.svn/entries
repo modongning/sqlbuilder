@@ -1,0 +1,37 @@
+10
+
+dir
+1582
+svn://112.74.67.35/SqlBuilder/src/main
+svn://112.74.67.35
+
+
+
+2016-11-30T03:50:57.787835Z
+1573
+leo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+684464a4-2a15-46f1-856e-ecd3a100781b
+
+java
+dir
+
+resources
+dir
+
+webapp
+dir
+
