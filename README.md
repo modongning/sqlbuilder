@@ -13,7 +13,9 @@ Springtemplate 操作小工具，根据对象模型，自动拼装sql插入，�
 		@DBId
 		private Long id;
 		private String name;
-
+		//数据库相关操作时忽略字段
+		@DBTransient
+		privare String flag;
 		...
 	}
 ```
