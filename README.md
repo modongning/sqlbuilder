@@ -1,7 +1,7 @@
 # Sqlbuilder
 学习之路，大牛请忽略或指教，谢谢
 
-Springtemplate 操作小工具，根据对象模型，自动拼装sql插入，修改，查询语句
+Spring JdbcTemplate 操作小工具，根据对象模型，自动拼装sql插入，修改，查询语句
 
 目前只支持单表操作
 
