@@ -92,7 +92,7 @@ Springtemplate 操作小工具，根据对象模型，自动拼装sql插入，�
 
 
 	User queryUser = new User();
-	queryUser.setName(‘Tom’);
+	queryUser.setName("Tom");
 	list = userDAO.query(queryUser);
 
 	...
