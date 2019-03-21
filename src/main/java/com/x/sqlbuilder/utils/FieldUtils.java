@@ -1,4 +1,4 @@
-package com.sqlbuilder.utils;
+package com.x.sqlbuilder.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

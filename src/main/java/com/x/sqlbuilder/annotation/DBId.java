@@ -1,4 +1,4 @@
-package com.sqlbuilder.annotation;
+package com.x.sqlbuilder.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

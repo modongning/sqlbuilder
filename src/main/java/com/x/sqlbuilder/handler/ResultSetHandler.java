@@ -1,4 +1,4 @@
-package com.sqlbuilder.handler;
+package com.x.sqlbuilder.handler;
 
 import java.lang.reflect.Field;
 import java.sql.ResultSet;
