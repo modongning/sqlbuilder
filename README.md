@@ -27,8 +27,8 @@ public class UserDAOImpl extends BaseDAOImpl<User> implements UserDAO {
 	/**
 	 * 基础CURD不满足的情况下，也可自行实现。以下是demo
 	 * 
-		 * @return 
-		 */
+	 * @return 
+	 */
 	@Override
 	public List<User> queryByStateList() {
 		String sql = "SELECT * FROM User u WHERE u.state IN(1,2)";
@@ -52,10 +52,12 @@ public void dosomeing(){
     User queryUser = new User();
     queryUser.setName("Tom");
 
-    //查询
+    //默认实现的查询
     list = userDAO.query(queryUser);
-
-    //TODO 业务逻辑	
+    //自定义实现的查询
+    list = userDAO.queryByStateList();
+    
+    //TODO 。。。业务逻辑	
 }
 
 ```
