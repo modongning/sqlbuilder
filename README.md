@@ -1,24 +1,23 @@
 # Sqlbuilder
 
-Spring JdbcTemplate 操作小工具，根据对象模型，自动拼装sql插入，修改，查询语句
-
-快速实现基本的查询（目前只支持单表操作）
+简易版本的ORM，只支持单表简单的curd操作。添加注解，即可根据对象模型，自动拼装sql插入，修改，查询语句
 
 ## 实体添加注解
 
 ```java
-@DBTable(name = "t_user")
+@DBTable(name = "t_user") //声明数据表名
 public class User implements Serializable {
-	@DBId
+	@DBId //声明ID
 	private Long id;
 	private String name;
-	//数据库相关操作时忽略字段
-	@DBTransient
+	@DBTransient //数据库相关操作时忽略字段
 	privare String flag;
 }
 ```
 
 ## DAO继承BaseDAOImpl
+
+继承`BaseDAOImpl`无需编写其他代码，既可以直接使用常规的CURD操作。如果需要特定的语句执行，则可以编写sql，然后交给`JdbcHelper`执行
 
 ```java
 @Repository
@@ -40,6 +39,8 @@ public class UserDAOImpl extends BaseDAOImpl<User> implements UserDAO {
 ```
 
 ## 在service中使用
+
+定义好dao之后，就可以在业务中使用了
 
 ```java
 	
